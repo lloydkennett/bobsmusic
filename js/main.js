@@ -15,7 +15,7 @@ $('#navbar a').on('click', function (e) {
 
 // Hide/Show
 $(document).ready(function () {
-  $('.song-lyrics-btn-archie').click(function () {
-    $('.song-lyrics-archie').toggle();
+  $('.song-lyrics-btn-container').click(function () {
+    $('.song-lyrics').toggle();
   });
 });

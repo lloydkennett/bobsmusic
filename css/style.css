@@ -113,6 +113,12 @@ h2 {
   text-align: center;
 }
 
+#reviews {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .songs-container {
   height: 30%;
   margin: 5rem;
