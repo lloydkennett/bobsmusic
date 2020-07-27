@@ -97,8 +97,12 @@ h3 {
   text-align: center;
 }
 
+.banner {
+  width: 90%;
+}
+
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   border-bottom: 1px solid #969696;
   border-top: 1px solid #969696;
@@ -113,17 +117,38 @@ h2 {
   text-align: center;
 }
 
+#copyright {
+  margin: 1rem;
+}
+
 #reviews {
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
+.review-1 {
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+#review-image {
+  width: 95%;
+}
+
+.review-title {
+  text-align: center;
+}
+
+.review-text {
+  text-align: left;
+}
+
 .songs-container {
   height: 30%;
-  margin: 5rem;
+  margin: 1rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 5rem;
   align-items: flex-start;
 }
@@ -151,7 +176,7 @@ h2 {
   display: flex;
 }
 
-.song-lyrics-btn {
+.song-btn {
   width: 100%;
 
   background-color: #242424; /* Green */
@@ -165,7 +190,7 @@ h2 {
   cursor: pointer;
 }
 
-.song-lyrics-btn:hover {
+.song-btn:hover {
   background-color: #555555;
   color: white;
 }
@@ -182,6 +207,10 @@ h2 {
   display: none;
 }
 
+#song-video-monkey {
+  display: none;
+}
+
 h3 {
   text-align: center;
   font-size: 2rem;
@@ -194,6 +223,42 @@ h3 {
   margin: 0.5rem auto;
 }
 
-footer {
+#footer {
   text-align: center;
+  font-size: 0.5rem;
+  margin: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .songs-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 3rem;
+  }
+
+  #review-image {
+    width: auto;
+  }
+
+  .banner {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .songs-container {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5rem;
+  }
+
+  .review-text {
+    text-align: center;
+  }
+
+  #review-image {
+    width: auto;
+  }
+
+  .banner {
+    width: auto;
+  }
 }

@@ -29,11 +29,11 @@
 
     <section id="songs">
       <h2>Songs</h2>
-      <p>ALL OF THE FOLLOWING TRACKS WERE WRITTEN AND PLAYED BY ROBERT LLOYD</p>
-      <p>Copyright exists on all material and intellectual property but permission is hereby given to download any or
+      <p id=copyright>ALL OF THE FOLLOWING TRACKS WERE WRITTEN AND PLAYED BY ROBERT LLOYD</p>
+      <p id=copyright>Copyright exists on all material and intellectual property but permission is hereby given to
+        download any or
         all tracks for personal private use only</p>
       <div class="songs-container">
-
         <div class="song">
           <div class="song-info-container">
             <h3>Archies Song</h3>
@@ -43,12 +43,12 @@
               Your browser does not support the audio element.
             </audio>
             <div class=song-btn-container>
-              <button class=song-lyrics-btn>Lyrics</button>
+              <button id=song-btn-archies class=song-btn>Lyrics</button>
               <a href="audio/ArchiesSongMP3.mp3" download="Archies_Song-Robert_Lloyd.mp3">
-                <button class=song-lyrics-btn>Download</button>
+                <button class=song-btn>Download</button>
               </a>
             </div>
-            <div class=song-lyrics>
+            <div id=song-lyrics-archies class=song-lyrics>
               <h4>CHORUS:-</h4>
               <p>"Three times around the world in thirty different countries"</p>
               <p>A girl in every port or so they say</p>
@@ -94,7 +94,7 @@
               <source src="audio/BlackCheGuevaraBeretMP3.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <div class=song-btn-container><button class=song-lyrics-btn>Lyrics</button></div>
+            <div class=song-btn-container><button class=song-btn>Lyrics</button></div>
             <div class=song-lyrics>
               <p><i>*A "mulato" is an
                   affectionate term for black/hispanic mixed race person derived from the Spanish word for mule - I have
@@ -132,7 +132,7 @@
               <source src="audio/Bevin Boy 1 mp3.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <div class=song-btn-container><button class=song-lyrics-btn>Lyrics</button></div>
+            <div class=song-btn-container><button class=song-btn>Lyrics</button></div>
             <div class=song-lyrics>
               <p>(guitar intro)</p>
             </div>
@@ -160,7 +160,7 @@
               <source src="audio/Butterfly.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <div class=song-btn-container><button class=song-lyrics-btn>Lyrics</button></div>
+            <div class=song-btn-container><button class=song-btn>Lyrics</button></div>
             <div class=song-lyrics>
               <p>Should have known I could not change - believing every word</p>
               <p>I even gave you space and time - aint that just absurd</p>
@@ -191,7 +191,7 @@
               <source src="audio/Ditchling Fair.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <div class=song-btn-container><button class=song-lyrics-btn>Lyrics</button></div>
+            <div class=song-btn-container><button class=song-btn>Lyrics</button></div>
             <div class=song-lyrics>
               <p>(guitar intro)</p>
             </div>
@@ -208,7 +208,7 @@
               <source src="audio/JaneOGreenMP3.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <div class=song-btn-container><button class=song-lyrics-btn>Lyrics</button></div>
+            <div class=song-btn-container><button class=song-btn>Lyrics</button></div>
             <div class=song-lyrics>
               <p>(guitar intro)</p>
             </div>
@@ -224,7 +224,7 @@
               <source src="audio/Matthew 7-24 MP3.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <div class=song-btn-container><button class=song-lyrics-btn>Lyrics</button></div>
+            <div class=song-btn-container><button class=song-btn>Lyrics</button></div>
             <div class=song-lyrics>
               <p>(guitar intro)</p>
             </div>
@@ -240,9 +240,18 @@
               <source src="audio/Monkey Tree MP3.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/QY_ELh8S6dM" frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class=song-btn-container><button class=song-lyrics-btn>Lyrics</button></div>
+            <div class=song-btn-container>
+              <button id=song-btn-monkey class=song-btn>Lyrics</button>
+              <a href="audio/Monkey Tree MP3.mp3" download="Monkey_Tree-Robert_Lloyd.mp3">
+                <button class=song-btn>Download</button>
+              </a>
+              <button id=song-video-btn-monkey class=song-btn>Video</button>
+            </div>
+            <div id=song-video-monkey>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/QY_ELh8S6dM" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe>
+            </div>
             <div class=song-lyrics>
               <p>(guitar intro)</p>
             </div>
@@ -258,7 +267,7 @@
               <source src="audio/MySongOfYouMP3.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <div class=song-btn-container><button class=song-lyrics-btn>Lyrics</button></div>
+            <div class=song-btn-container><button class=song-btn>Lyrics</button></div>
             <div class=song-lyrics>
               <p>(guitar intro)</p>
             </div>
@@ -274,7 +283,7 @@
               <source src="audio/Pre CBS MP3.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <div class=song-btn-container><button class=song-lyrics-btn>Lyrics</button></div>
+            <div class=song-btn-container><button class=song-btn>Lyrics</button></div>
             <div class=song-lyrics>
               <p>(guitar intro)</p>
             </div>
@@ -290,7 +299,7 @@
               <source src="audio/Ruben Uptons Crook 3.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <div class=song-btn-container><button class=song-lyrics-btn>Lyrics</button></div>
+            <div class=song-btn-container><button class=song-btn>Lyrics</button></div>
             <div class=song-lyrics>
               <p>(guitar intro)</p>
             </div>
@@ -306,7 +315,7 @@
               <source src="audio/Seven Keys MP3 (2).mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <div class=song-btn-container><button class=song-lyrics-btn>Lyrics</button></div>
+            <div class=song-btn-container><button class=song-btn>Lyrics</button></div>
             <div class=song-lyrics>
               <p>(guitar intro)</p>
             </div>
@@ -322,7 +331,7 @@
               <source src="audio/SonsofAbrahamMP3.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <div class=song-btn-container><button class=song-lyrics-btn>Lyrics</button></div>
+            <div class=song-btn-container><button class=song-btn>Lyrics</button></div>
             <div class=song-lyrics>
               <p>(guitar intro)</p>
             </div>
@@ -338,7 +347,7 @@
               <source src="audio/StickSongMP3.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <div class=song-btn-container><button class=song-lyrics-btn>Lyrics</button></div>
+            <div class=song-btn-container><button class=song-btn>Lyrics</button></div>
             <div class=song-lyrics>
               <p>(guitar intro)</p>
             </div>
@@ -354,7 +363,7 @@
               <source src="audio/" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <div class=song-btn-container><button class=song-lyrics-btn>Lyrics</button></div>
+            <div class=song-btn-container><button class=song-btn>Lyrics</button></div>
             <div class=song-lyrics>
               <p>(guitar intro)</p>
             </div>
@@ -370,7 +379,7 @@
               <source src="audio/WaitingForTheGirlMP3.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <div class=song-btn-container><button class=song-lyrics-btn>Lyrics</button></div>
+            <div class=song-btn-container><button class=song-btn>Lyrics</button></div>
             <div class=song-lyrics>
               <p>(guitar intro)</p>
             </div>
@@ -384,23 +393,23 @@
     <section id="reviews">
       <h2>Reviews</h2>
       <div class=review-1>
-        <p>RADIO PLAY OF "TELL ME TELL ME TRUE" ON RADIO UK INTERNATIONAL-</p>
-
-        <p>THIS CRITCAL REVIEW OF ROBERT LLOYD SONGS WAS POSTED BY JOHN D WILSON IN OCTOBER 2010</p>
-
-        <p>(on the blog website Windy Ridge -what it looks like from here)</p>
-
-        <p>John D Wilson is a successful singer/songwriter who has had USA Country Chart No1 hit song and who has been
+        <p class=review-title>RADIO PLAY OF "TELL ME TELL ME TRUE" ON RADIO UK INTERNATIONAL</p>
+        <p class=review-text>This critical review of Robert Lloyd songs was posted by John D Wilson in October 2010 (on
+          the blog website
+          Windy Ridge -what it looks like from here)</p>
+        <p class=review-text>John D Wilson is a successful singer/songwriter who has had USA Country Chart No1 hit song
+          and who has been
           professionally involved in reviewing indie songs in USA - so who am I to argue!</p>
-        <img src="images/review1.jpg" /> <br />
-        <img src="images/review2.jpg" />
+        <img id=review-image src="images/review1.jpg" /> <br />
+        <img id=review-image src="images/review2.jpg" />
       </div>
     </section>
   </main>
 
   <footer>
-    <small>Copyright exists on all material and intellectual property but permission is hereby given to download any or
-      all tracks for personal private use only</small>
+    <p id=footer>Copyright exists on all material and intellectual property but permission is hereby given to download
+      any or
+      all tracks for personal private use only</p>
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

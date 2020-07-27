@@ -15,7 +15,14 @@ $('#navbar a').on('click', function (e) {
 
 // Hide/Show
 $(document).ready(function () {
-  $('.song-btn-container').click(function () {
-    $('.song-lyrics').toggle();
+  $('#song-lyrics-btn-archies').click(function () {
+    $('#song-lyrics-archies').toggle();
+  });
+});
+
+// Hide/Show
+$(document).ready(function () {
+  $('#song-video-btn-monkey').click(function () {
+    $('#song-video-monkey').toggle();
   });
 });
