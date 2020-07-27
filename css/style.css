@@ -145,9 +145,10 @@ h2 {
   justify-content: space-around;
   align-content: center;
 }
-.song-lyrics-btn-container {
+.song-btn-container {
   width: 5rem;
   align-content: center;
+  display: flex;
 }
 
 .song-lyrics-btn {

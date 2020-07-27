@@ -15,7 +15,7 @@ $('#navbar a').on('click', function (e) {
 
 // Hide/Show
 $(document).ready(function () {
-  $('.song-lyrics-btn-container').click(function () {
+  $('.song-btn-container').click(function () {
     $('.song-lyrics').toggle();
   });
 });
