@@ -15,6 +15,7 @@
   <header>
     <nav id="navbar">
       <ul>
+        <li><a href="#home">Home</a></li>
         <li><a href="#songs">Songs</a></li>
         <li><a href="#reviews">Reviews</a></li>
       </ul>
@@ -33,54 +34,29 @@
       <p id=copyright>Copyright exists on all material and intellectual property but permission is hereby given to
         download any or
         all tracks for personal private use only</p>
+
+      <div id="song-lyrics-overlay" class="song-lyrics">
+        <div class="song-lyrics-content">
+          <span class="close" id="close-lyrics">&times;</span>
+          <div id="lyrics-content">
+          </div>
+        </div>
+      </div>
+
       <div class="songs-container">
         <div class="song">
           <div class="song-info-container">
             <h3>Archies Song</h3>
-            <h5 class=song-desc>Archie (my Dad) always threatened to return to his first love "the sea"</h5>
+            <h5 class="song-desc">Archie (my Dad) always threatened to return to his first love "the sea"</h5>
             <audio controls class="audio-player">
               <source src="audio/ArchiesSongMP3.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <div class=song-btn-container>
-              <button id=song-btn-archies class=song-btn>Lyrics</button>
+            <div class="song-btn-container">
+              <button id="song-lyrics-btn-archies" class="song-lyrics-btn song-btn">Lyrics</button>
               <a href="audio/ArchiesSongMP3.mp3" download="Archies_Song-Robert_Lloyd.mp3">
-                <button class=song-btn>Download</button>
+                <button class="song-btn">Download</button>
               </a>
-            </div>
-            <div id=song-lyrics-archies class=song-lyrics>
-              <h4>CHORUS:-</h4>
-              <p>"Three times around the world in thirty different countries"</p>
-              <p>A girl in every port or so they say</p>
-              <p>But the girl in every dream was the Co-op dancing queen</p>
-              <p>He'll go back home and marry her some day</p>
-              <br />
-              <p>(Well he)</p>
-              <p>Paid off down in old Cape Town, Hit the bars and ran- around</p>
-              <p>Time for those Africana girls and sun</p>
-              <p>But he dreamed of his dancing queen and all those oceans in between</p>
-              <p>(So he) signed on for the North Atlantic run</p>
-              <p>Well he knew he was getting closer in Halifax, Novia Scotia</p>
-              <p>Close enough to realise his dream</p>
-              <p>He problems started when -his ship could just do ten</p>
-              <p>The rest of the convoy they we making fifteen.</p>
-              <h4>CHORUS</h4>
-              <p>In the dog watch late at night that port and starboard lights</p>
-              <p>Were disappearing fast across the foam</p>
-              <p>But the pole star and the plough stayed over his port bow</p>
-              <p>And guided that old sea-dog straight back home</p>
-              <p>With his demob suit and pay he gambled all the way</p>
-              <p>From Liverpool to Brighton over-night</p>
-              <p>So just like in his dream he married his dancing queen</p>
-              <p>Both of the families said "well it just aint right"</p>
-              <h4>CHORUS</h4>
-              <p>Well he did not stand a chance when she taught him how to dance</p>
-              <p>They were reeling ,rocking and rolling every day</p>
-              <p>Well it was fifty years ago today she stole his heart away hey hey</p>
-              <p>And no-one gave them half a chance , no-one gave them half a chance</p>
-              <p>And no-one gave them half a chance - NO WAY</p>
-              <h4>CHORUS</h4>
-              <p>fini : and no-one gave them half a chance x 3 - NO WAY!</p>
             </div>
           </div>
         </div>
@@ -94,31 +70,11 @@
               <source src="audio/BlackCheGuevaraBeretMP3.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <div class=song-btn-container><button class=song-btn>Lyrics</button></div>
-            <div class=song-lyrics>
-              <p><i>*A "mulato" is an
-                  affectionate term for black/hispanic mixed race person derived from the Spanish word for mule - I have
-                  added " - tito" to denote a small child.... *</i></p>
-              <br />
-              <p>(guitar intro)</p>
-              <p>Mulatito in the schoolyard - Cries when his Ma walks away</p>
-              <p>Children are dancing and laughing at his hand-me-down "blue d' travais"</p>
-              <p>Every year he gets stronger and dresses the same very day</p>
-              <p>But she confessed she loved him the best in his black Che Guevara beret</p>
-              <p>(guitar)</p>
-              <p>She tells him of great revolution - freedom for all is the way</p>
-              <p>He makes it his greatest ambition - to be like his hero some day</p>
-              <p>Mulato teen in the schoolyard dressed up and standing in line</p>
-              <p>Cross belts of faux amunition on show and replica M1 Carbine</p>
-              <p>(guitar)</p>
-              <p>He feigns a bead on the teacher - shoulders the carbine in play</p>
-              <p>But young rookie cop's Smith and Weston is already turning his way</p>
-              <p>Too hot to question the action - the trigger is squeezed all the way the</p>
-              <p>With one single round the boy falls to the ground in his (black Che Guevara beret) x2</p>
-              <p>(guitar)</p>
-              <p>The school yard is crowded wuth children - each with a pretty bouquet</p>
-              <p>Wearing blue dungarees with a tear in the knees - (and a black Che Guevara Beret) x 2</p>
-              <p>Wearing blue dungarees with a tear in the knees - (and a black Che Guevara Beret) x 2 </p>
+            <div class="song-btn-container">
+              <button id="song-lyrics-btn-cheguevara" class="song-lyrics-btn song-btn">Lyrics</button>
+              <a href="audio/BlackCheGuevaraBeretMP3.mp3" download="Black_Che_Guevara_Beret-Robert_Lloyd.mp3">
+                <button class="song-btn">Download</button>
+              </a>
             </div>
           </div>
         </div>
@@ -132,9 +88,11 @@
               <source src="audio/Bevin Boy 1 mp3.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <div class=song-btn-container><button class=song-btn>Lyrics</button></div>
-            <div class=song-lyrics>
-              <p>(guitar intro)</p>
+            <div class="song-btn-container">
+              <button id="song-lyrics-btn-bevinboy" class="song-lyrics-btn song-btn">Lyrics</button>
+              <a href="audio/Bevin Boy 1 mp3.mp3" download="Bevin_Boy-Robert_Lloyd.mp3">
+                <button class="song-btn">Download</button>
+              </a>
             </div>
           </div>
         </div>
@@ -160,24 +118,11 @@
               <source src="audio/Butterfly.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
-            <div class=song-btn-container><button class=song-btn>Lyrics</button></div>
-            <div class=song-lyrics>
-              <p>Should have known I could not change - believing every word</p>
-              <p>I even gave you space and time - aint that just absurd</p>
-              <p>Because your love just gave me wings -(I was) flying like a bird</p>
-              <p>Then falling like a butterfly - in the rain</p>
-              <p>I need the warmth of your sweet love to dry my wings again</p>
-              <p>I should have known you could not change - I still taste those lies</p>
-              <p>To trust is such a crazy thing while learning to despise</p>
-              <p>I tell myself - now don't look down, experience the highs</p>
-              <p>Then falling like a butterfly in the rain</p>
-              <p>I need the warmth of your sweet love to dry my wings again</p>
-              <p>Sometimes it feel we get it right - or so it might have seemed</p>
-              <p>It only took one drunken night to tear it at the seems</p>
-              <p>To get that high loke we have done like flying in my dreams</p>
-              <p>(Then falling like a butterfly -in the rain</p>
-              <p>I need the warmth of your sweet love</p>
-              <p>To dry my wings again) x2 </p>
+            <div class="song-btn-container">
+              <button id="song-lyrics-btn-butterfly" class="song-lyrics-btn song-btn">Lyrics</button>
+              <a href="audio/Butterfly.mp3" download="Butterfly-Robert_Lloyd.mp3">
+                <button class="song-btn">Download</button>
+              </a>
             </div>
           </div>
         </div>
