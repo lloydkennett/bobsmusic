@@ -34,12 +34,50 @@ $(document).ready(function () {
       case 'bevinboy':
         lyricsPath += 'BevinBoy.html';
         break;
+      case 'butterfly':
+        lyricsPath += 'Butterfly.html';
+        break;
+      case 'ditchling':
+        lyricsPath += 'DitchlingFair.html';
+        break;
+      case 'jane':
+        lyricsPath += 'JaneOGreen.html';
+        break;
+      case 'matthew':
+        lyricsPath += 'Matthew720.html';
+        break;
+      case 'monkey':
+        lyricsPath += 'MonkeyTree.html';
+        break;
+      case 'mysong':
+        lyricsPath += 'MySongOfYou.html';
+        break;
+      case 'precbs':
+        lyricsPath += 'PreCBS.html';
+        break;
+      case 'rhuban':
+        lyricsPath += 'RubenUptonsCrook.html';
+        break;
+      case 'seven':
+        lyricsPath += 'SevenKeys.html';
+        break;
+      case 'abraham':
+        lyricsPath += 'SonsofAbraham.html';
+        break;
+      case 'stick':
+        lyricsPath += 'StickSong.html';
+        break;
+      case 'tellme':
+        lyricsPath += 'TellMeTellMeTrue.html';
+        break;
+      case 'waiting':
+        lyricsPath += 'WaitingForTheGirl.html';
+        break;
     }
 
     $('#lyrics-content').empty();
 
     $.get(lyricsPath, function (data) {
-      var lines = data.split('\n');
       $('#lyrics-content').append(data);
     });
 

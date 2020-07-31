@@ -171,15 +171,13 @@ h2 {
   align-content: center;
 }
 .song-btn-container {
-  width: 5rem;
   align-content: center;
   display: flex;
+  margin-top: 0.5rem;
 }
 
 .song-btn {
-  width: 100%;
-
-  background-color: #242424; /* Green */
+  background-color: #1d1d1d;
   border: none;
   color: white;
   text-align: center;
@@ -188,6 +186,8 @@ h2 {
   font-size: 16px;
   transition-duration: 0.4s;
   cursor: pointer;
+  padding: 0.5rem;
+  margin-right: 1rem;
 }
 
 .song-btn:hover {
